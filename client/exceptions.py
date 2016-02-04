@@ -1,0 +1,2 @@
+class NoActorError(Exception):
+    pass
