@@ -6,14 +6,14 @@ from unittest.mock import patch, Mock
 import example.client.main as main
 from example.client.exceptions import NoActorError
 
-
+'''
 def test_get_actor_ok():
     d = {'actor': {'url': 'http://my-actor-url'}
         }
     res = main.get_actor(d)
     assert_equal(res, 'http://my-actor-url')
 
-'''
+
 def test_get_actor_fails_with_no_actor_key():
     with assert_raises(KeyError):
         main.get_actor({})

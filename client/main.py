@@ -6,7 +6,7 @@ from .exceptions import NoActorError
 URL = 'https://api.github.com/events'
 
 """
-This will return a list of dictionary items, each of the form:
+This will return a list of dictionary items, each of the form (but not all keys are always present):
 
 payload: {u'size': 1,
                 u'head': u'31690aa2e2b1c2167fe2919bb138a0e4a8f6d61b',
